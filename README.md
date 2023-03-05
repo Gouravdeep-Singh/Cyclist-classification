@@ -9,7 +9,7 @@ Visualization
 Outlier handling
 Model Implementation
 Evaluation
-#EDA: 
+# EDA: 
 It involves handling of missing values, checking the shape of our dataset, figuring out the datatypes of each feature and also encoding categorical feature to numerical using label encoder. In Time extraction we use the datetime model and calculate the time taken for a cyclist to reach their destination and form a new feature based on it. On visualizing the data using heatmap we try to analyze the correlation among various features. features with low correaltion wil be dropped. Also we check the varriablity using Various Threshold- True indicating high variabilty while false meaning less variablity. we drop the features with low variability to avoid redundancy.
 # In recursive feature selection, we check the importance of each selected feature with respect to our target uisng random forest algorithm.
 The outliers are detected using IQR and were removed using flouring and capping. Log transformation is also used to check for skweness. if the skewness of the feature is less than that of a feature when it is log transformed then we use the orignal feature else we use the transformed one.
